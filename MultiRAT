@@ -4,7 +4,7 @@ MULTIRAT (DCRAT, VenomRAT, AsyncRAT, XWorm (x3), PureLogs Stealer)
 
 Infection Chain
 
-Email -> Lnk -> VBS -> BAT -> ZIP -> Multi RAT 
+Email -> Lnk -> VBS -> BAT -> ZIP -> py Multi RAT 
 
 Webdav hosting payloads
 alljsnybsafva[.]living:5030 - Created 43days ago
