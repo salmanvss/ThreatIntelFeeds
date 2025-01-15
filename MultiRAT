@@ -108,13 +108,13 @@ pub-f7808fef1de942f693af4beb1b04ee03[.]r2[.]dev/Documents[.]html
 pub-5708ccd63e154830b51d27cb5c1180e0[.]r2[.]dev/Documents[.]html
 
 Hashes
-0cdf36bb818af1c1634ae06bc87668e8  bab.zip
-9285c7df34d011a87be823b39ae4cb36  cam.zip
-a9f0c3c76516726b8de37c169f6ddec5  new.bat
+a9f0c3c76516726b8de37c169f6ddec5  new.bat - obfuscated
 5f8b33883ebb0b907f879fb981798d88  new.vbs
 06480f1e6aa48daab019e8f1a6b834c9  pws1.vbs
 2862ffb5ea32ff114bebe41576441b02  PWS.vbs
-710b106acf55aea6dffce81b9fff7e06  startupppp.bat
+710b106acf55aea6dffce81b9fff7e06  startupppp.bat - obfuscated
+0cdf36bb818af1c1634ae06bc87668e8  bab.zip
+9285c7df34d011a87be823b39ae4cb36  cam.zip
 
 bab.zip
 4a4d26e640134a4e8d6fada9d2ee3d97  tumb-an.py
